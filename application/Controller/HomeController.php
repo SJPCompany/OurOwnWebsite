@@ -22,7 +22,7 @@ class HomeController
     public function index()
     {
         // load views
-        require APP . 'view/_templates/headerstart.php';
+        require APP . 'view/_templates/header.php';
         require APP . 'view/home/index.php';
         require APP . 'view/_templates/footer.php';
 
@@ -52,7 +52,7 @@ class HomeController
     public function StartPage()
     {
         // load views
-        require APP . 'view/_templates/header.php';
+        require APP . 'view/_templates/headerstart.php';
         require APP . 'view/home/startpage.php';
         require APP . 'view/_templates/footer.php';
     }

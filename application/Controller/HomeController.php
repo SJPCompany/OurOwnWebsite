@@ -28,14 +28,15 @@ class HomeController
 
     }
 
-    public function doLogin() {
+    public function doLogin()
+    {
         //die("HomeController.doLogin()");
         if ($_POST['username'] == '' || $_POST['password'] == '') {
             die("Some fields has been left empty");
         }
 
-        if(isset($_POST)) {
-            if(isset($_POST['submit'])) {
+        if (isset($_POST)) {
+            if (isset($_POST['submit'])) {
                 $username = $_POST['username'];
                 $password = $_POST['password'];
                 $role = $_POST['role'];
@@ -55,5 +56,10 @@ class HomeController
         require APP . 'view/_templates/header.php';
         require APP . 'view/login_page/index.php';
         require APP . 'view/_templates/footer.php';
+    }
+
+    public function Logout() {
+        session_destroy();
+        header('location: ' . URL . 'home/index');
     }
 }

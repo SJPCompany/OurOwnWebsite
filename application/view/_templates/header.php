@@ -23,7 +23,11 @@
                 <a href="#" class="" id="Logo"></a>
             </li>
             <li><a href="#" class="nav-item">CONTACT</a></li>
-            <li><a href="#" class="nav-item">LOGIN</a></li>
+            <?php if (isset($_SESSION['username'])) {
+                echo '<li><a href="#" class="nav-item">LOGOUT</a></li>';
+            } else {
+                echo '<li><a href="#" class="nav-item">LOGIN</a></li>';
+            } ?>
             <li style="font-family: "Arial Black";"><?php
                 if (isset($_SESSION['username'])) { ?>
                     <div class="user"> Current User: <?php echo $_SESSION['username']; ?></div>

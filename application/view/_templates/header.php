@@ -14,21 +14,20 @@
     <link href="<?php echo URL; ?>css/style.css" rel="stylesheet">
 </head>
 <body>
-
-    <!-- navigation -->
-    <ul class="menu">
-        <li class="link"><a class="alink" href="<?php echo URL; ?>home/startpage">home</a></li>
-        <li class="link"  id='dropbtn'><a class="alink" href="<?php echo URL; ?>about/index">About</a>
-            <div class="dropdown">
-                <a class="alink" href="#">Projects</a>
-                <a class='alink' href="#">The members</a>
-                <a class='alink' href="#">How we started</a>
-        </li>
-        <li class="link"><a class="alink" href="#">Contact</a></li
-        <li class="link"><a class="alink" href="home/logout">Logout</a></li>
-    </ul>
-
-<?php
-if (isset($_SESSION['username'])) { ?>
-    <div class="user"> Current User: <?php echo $_SESSION['username']; ?></div>
-<?php } ?>
+<div>
+    <nav class="navbar">
+        <ul class="sjp-bar">
+            <li><a href="#" class="nav-item">ABOUT US</a></li>
+            <li><a href="#" class="nav-item">MENU</a></li>
+            <li>
+                <a href="#" class="" id="Logo"></a>
+            </li>
+            <li><a href="#" class="nav-item">CONTACT</a></li>
+            <li><a href="#" class="nav-item">LOGIN</a></li>
+            <li style="font-family: "Arial Black";"><?php
+                if (isset($_SESSION['username'])) { ?>
+                    <div class="user"> Current User: <?php echo $_SESSION['username']; ?></div>
+                <?php } ?></li>
+        </ul>
+    </nav>
+</div>

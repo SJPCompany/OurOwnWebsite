@@ -167,3 +167,43 @@ input{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
+.navbar {
+    width: 100%;
+    height: 90px;
+    top: 0px;
+    margin: 0 auto;
+    background: black;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Arial Black";
+}
+
+.sjp-bar {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sjp-bar>li>a {
+    text-decoration: none;
+    padding: 36px 70px 34px 70px;
+    color: #FFF;
+    letter-spacing: 1px;
+}
+
+.nav-item:hover {
+    background-color: #555;
+
+}
+
+#Logo {
+    background-image: url(../img/sjp-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+
+}

@@ -37,3 +37,13 @@ $(function() {
     }
 
 });
+
+"use strict";
+
+$(document).ready(function() {
+    $(".sjp-nav").on("click", function(){
+        $(".open li").toggleClass("show");
+
+    });
+
+})

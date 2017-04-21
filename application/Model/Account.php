@@ -71,7 +71,8 @@ class Account extends Model
             }
         }
         // Redirect to the startpage
-        header('location: ' . URL . 'home/startpage');
+        // Just add a page when it finshed
+        header('location: ' . URL . '');
         return $role;
     }
 }

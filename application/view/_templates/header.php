@@ -30,8 +30,9 @@
             } ?>
             <li style="font-family: "Arial Black";"><?php
                 if (isset($_SESSION['username'])) { ?>
-                    <div class="user"> Current User: <?php echo $_SESSION['username']; ?></div>
-                <?php } ?></li>
+                    <div style="color: white;" class="user"> Current User: <?php echo $_SESSION['username']; ?></div>
+                <?php } ?>
+            </li>
         </ul>
     </nav>
 </div>

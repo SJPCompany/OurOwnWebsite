@@ -49,11 +49,11 @@ class HomeController
         }
     }
 
-    public function StartPage()
+    public function Loginpage()
     {
         // load views
         require APP . 'view/_templates/header.php';
-        require APP . 'view/home/startpage.php';
+        require APP . 'view/login_page/index.php';
         require APP . 'view/_templates/footer.php';
     }
 }

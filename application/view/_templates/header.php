@@ -24,5 +24,11 @@
                 <a class='alink' href="#">The members</a>
                 <a class='alink' href="#">How we started</a>
         </li>
-        <li class="link"><a class="alink" href="#">Contact</a></li>
+        <li class="link"><a class="alink" href="#">Contact</a></li
+        <li class="link"><a class="alink" href="home/logout">Logout</a></li>
     </ul>
+
+<?php
+if (isset($_SESSION['username'])) { ?>
+    <div class="user"> Current User: <?php echo $_SESSION['username']; ?></div>
+<?php } ?>

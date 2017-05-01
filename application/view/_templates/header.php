@@ -17,6 +17,7 @@
 <div>
     <nav class="navbar">
         <ul class="sjp-bar">
+            <li><a href="#" class="nav-item">PROJECTS</a></li>
             <li><a href="#" class="nav-item">ABOUT US</a></li>
             <li><a href="#" class="nav-item">MENU</a></li>
             <li>
